@@ -433,8 +433,35 @@ footer {
       education
 ----------------- */
 /* ---------------
-    associations
------------------ */
-/* ---------------
       resume
 ----------------- */
+#Career_History span:before {
+  content: "(";
+}
+
+span:after {
+  content: ")";
+}
+
+#Volunteer_History span:before {
+  content: "(";
+}
+
+span:after {
+  content: ")";
+}
+
+@media (min-width: 768px) {
+  #Core_Competencies {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+  }
+}
+#Core_Competencies span:before {
+  content: "(";
+}
+#Core_Competencies span:after {
+  content: ")";
+}
