@@ -333,6 +333,38 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--DarkGray);
+}
+
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .content-grid {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+.content-grid .content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-color: var(--white);
+  grid-area: content;
+}
+
+#contact .social-icons li a:link, #contact .social-icons li a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+#contact .social-icons li a:hover, #contact .social-icons li a:active {
+  color: var(--DarkGray);
+}
+
 /* =============
     Typography
 ============= */
@@ -362,9 +394,47 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  background-color: var(--LightGray);
+}
+
 /* =============
     Header
 ============= */
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--LightGray);
+}
+
+/* ---------------
+      index
+----------------- */
+/* ---------------
+      projects
+----------------- */
+/* ---------------
+      hey chef
+----------------- */
+#Getting_Started img {
+  width: 100%;
+}
+
+#Defining_Further img {
+  width: 100%;
+}
+
+#Increasing_Fidelity video {
+  width: 100%;
+}
+
+/* ---------------
+      education
+----------------- */
+/* ---------------
+    associations
+----------------- */
+/* ---------------
+      resume
+----------------- */
