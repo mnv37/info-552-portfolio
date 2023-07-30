@@ -2,7 +2,21 @@
     Base
 ============= */
 body{
-    background-color: var(--Black);
+    background-color: var(--black);
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+
+    li{
+        list-style: none;
+    }
 }
 
 .content-grid{

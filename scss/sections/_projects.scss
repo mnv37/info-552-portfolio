@@ -1,3 +1,28 @@
 /* ---------------
       projects
 ----------------- */
+
+p{
+      padding-bottom: 8px;
+}
+
+img{
+width: 100px;
+}   
+
+#chef{
+      display: grid;
+      grid-template-columns: 25% auto;
+      grid-template-areas:
+      "ci clm";
+}
+
+.chef_icon{
+      padding: 8px 0 16px 16px;
+      grid-area: ci;
+}
+
+.chef_learn_more{
+      padding: 8px 0 16px 0;
+      grid-area: clm;
+}

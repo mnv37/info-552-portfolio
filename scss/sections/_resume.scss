@@ -1,35 +1,35 @@
 /* ---------------
       resume
 ----------------- */
-
-#Career_History
-      span:before{
-            content: '(';
+.resume_content{
+            margin: 0px 8px;
+      h2{
+            margin-bottom: 16px;
+            width: 100%;
+            background-color: var(--LightGray);}
+      h3{
+            margin-bottom: 8px;}
+      ul{
+            margin-bottom: 16px;}
+            
       }
-      span:after{
-            content: ')';
-      }
 
-#Core_Competencies
-      span:before{
-            content: '(';}
-      span:after{
-            content: ')';} 
+.role_name{
+      list-style: none;
+      margin-bottom: 8px;}
 
-#Volunteer_History
-span:before{
-      content: '(';
-}
-span:after{
-      content: ')';
-}
+            
+.role_description{
+      list-style: disc outside;
+      margin-left: 16px;}
 
 
-@include md{
+#CoreComp_TechSkills{
+  @include md{
       display:grid;
       grid-template-columns: 50% auto; 
       grid-template-areas:
-      "cc ts"    
+      "cc ts"}
 }
       
 #Core_Competencies{

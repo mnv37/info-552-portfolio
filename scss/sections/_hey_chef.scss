@@ -1,15 +1,64 @@
 /* ---------------
       hey chef
 ----------------- */
+
+.hey_chef_content{
+      margin: 0px 8px;
+      h3{
+            margin: -8px 0px 16px;}
+      h2{
+            margin-bottom: 8px;
+            width: 100%;
+            background-color: var(--LightGray);}
+      p{
+            margin-bottom: 4px;}
+      }
+
+.skill_bp{
+      list-style: disc outside;
+      margin-left: 16px;
+}
+
+#Skills_Exercised{
+      margin-bottom: 8px;
+}
+
 #Getting_Started{
       img{
-            width: 100%;
+            display:block;
+            width: 80%;
+            margin: 0 auto 8px;
       }
+}
+
+.feedback_categories{
+      list-style: none;
+      margin-left: 16px;
+      margin-bottom: 4px;
+}
+
+.feedback_bp{
+      list-style: disc outside;
+      margin-left: 40px;
+}
+
+.feedback_bp_last{
+      list-style: disc outside;
+      margin-left: 40px;
+      margin-bottom: 8px;
+}
+
+.feedback_bp_last2{
+      list-style: disc outside;
+      margin-left: 40px;
+      margin-bottom: 16px;
 }
 
 #Defining_Further{
       img{
-            width: 100%;
+            display: block;
+            width: 80%;
+            margin: 0 auto 8px;
       }
 }
 
@@ -17,4 +66,22 @@
       video{
             width: 100%;
       }
+}
+
+#Design_Justification{
+      img{
+            display: block;
+            width: 30%;
+            margin: 0 auto 24px 0;
+      }
+}
+.design_bp{
+      list-style: disc outside;
+      margin-left: 24px;
+}
+
+.design_bp_last{
+      list-style: disc outside;
+      margin-left: 24px;
+      margin-bottom: 16px;
 }

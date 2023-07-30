@@ -24,6 +24,7 @@
                 </nav>
             </header>
 
+            <div class="hey_chef_content">
             <h1>Hey, Chef!</h1>
             <h3>A voice assistant prototype</h3>
 
@@ -40,12 +41,12 @@
             <section id="Skills_Exercised">
                 <h2>Skills Exercised</h2>
                 <ul>
-                    <li>Sketching</li>
-                    <li>Storyboarding</li>
-                    <li>Semi-structured interviewing</li>
-                    <li>State transition diagramming</li>
-                    <li>Wireframing</li>
-                    <li>Video prototyping</li>
+                    <li class="skill_bp">Sketching</li>
+                    <li class="skill_bp">Storyboarding</li>
+                    <li class="skill_bp">Semi-structured interviewing</li>
+                    <li class="skill_bp">State transition diagramming</li>
+                    <li class="skill_bp">Wireframing</li>
+                    <li class="skill_bp">Video prototyping</li>
                 </ul>
             </section>
 
@@ -66,43 +67,47 @@
                     <p>I engaged 2 individuals with varying demographics for different perspective and conducted semi-structured interviews via Zoom calls.</p>
 
                     <p>Potential User #1 is a full-time college student living in university housing with 3 roommates and a limited meal plan. </p>
-                        <p>Favorite Elements:</p>
+                    <ul>
+                        <li class="feedback_categories">Favorite Elements:</li>
                             <ul>
-                                <li>Not a permanent install, accommodates different layouts </li>
-                                <li>The recipe visuals, specifically the recipe overview layout </li>
+                                <li class="feedback_bp">Not a permanent install, accommodates different layouts </li>
+                                <li class="feedback_bp_last">The recipe visuals, specifically the recipe overview layout </li>
                             </ul>
-                        <p>Suggestions:</p>
+                        <li class="feedback_categories">Suggestions:</li>
                             <ul>
-                                <li>Phone app where user could sync recipes or upload their own recipe </li>
-                                <li>Add icons to the recipe titles of utensils/appliances/time </li>
-                                <li>Swap the cuisine category for a cook time category </li>
-                                <li>Ability to skip steps </li>
-                                <li>Eliminate number of commands needed to get to final outcome </li>
+                                <li class="feedback_bp">Phone app where user could sync recipes or upload their own recipe </li>
+                                <li class="feedback_bp">Add icons to the recipe titles of utensils/appliances/time </li>
+                                <li class="feedback_bp">Swap the cuisine category for a cook time category </li>
+                                <li class="feedback_bp">Ability to skip steps </li>
+                                <li class="feedback_bp_last">Eliminate number of commands needed to get to final outcome </li>
                             </ul>
-                        <p>Concerns:</p>
+                        <li class="feedback_categories">Concerns:</li>
                             <ul> 
-                            <li>General accessibility concerns; for example, the deaf/HOH community </li> 
-                            <li>Safety concerns with assistant controlling open flames on stove/heating oven </li>
+                            <li class="feedback_bp">General accessibility concerns; for example, the deaf/HOH community </li> 
+                            <li class="feedback_bp_last2">Safety concerns with assistant controlling open flames on stove/heating oven </li>
                             </ul>
+                    </ul>
 
                     <p>Potential User #2 is a parent with three young adult children in their household and works a full-time job nearby.</p>
-                        <p>Favorite Elements:</p>
+                    <ul>
+                        <li class="feedback_categories">Favorite Elements:</li>
                             <ul>
-                                <li>Intuitive interfaces and work flow </li>
-                                <li>Suggested commands on the screen </li>
+                                <li class="feedback_bp">Intuitive interfaces and work flow </li>
+                                <li class="feedback_bp_last">Suggested commands on the screen </li>
                             </ul>
-                        <p>Suggestions:</p>
+                        <li class="feedback_categories">Suggestions:</li>
                             <ul>
-                                <li>Do not have the assistant read off recipe names </li>
-                                <li>Add pictures to each step of the recipe screens </li>
-                                <li>Have option to command what you know you want to do versus browsing </li>
-                                <li>Add a fourth explore recipes category for time constraints </li>
-                                <li>Ability to sync with Pinterest </li>
+                                <li class="feedback_bp">Do not have the assistant read off recipe names </li>
+                                <li class="feedback_bp">Add pictures to each step of the recipe screens </li>
+                                <li class="feedback_bp">Have option to command what you know you want to do versus browsing </li>
+                                <li class="feedback_bp">Add a fourth explore recipes category for time constraints </li>
+                                <li class="feedback_bp_last">Ability to sync with Pinterest </li>
                             </ul>
-                        <p>Concerns:</p>
+                        <li class="feedback_categories">Concerns:</li>
                             <ul> 
-                                <li>Longer to say multi-step commands than to just do it yourself</li> 
+                                <li class="feedback_bp_last2">Longer to say multi-step commands than to just do it yourself</li> 
                             </ul>
+                    </ul>
                 </article>
             </section>
             
@@ -134,60 +139,61 @@
             <section id="Design_Justification">
                 <h2>Design Justification</h2>
                 <article>
-                    <p>Physical Interface</p>
+                    <h4>Physical Interface</h4>
                         <ul>
-                            <li>iPad-shaped interface: mobility to secure to any surface & accommodate for varying kitchen layouts.</li>
-                            <li>Small/medium screen size: prioritize verbal interactions over visual/physical ones.</li>
+                            <li class="design_bp">iPad-shaped interface: mobility to secure to any surface & accommodate for varying kitchen layouts.</li>
+                            <li class="design_bp_last">Small/medium screen size: prioritize verbal interactions over visual/physical ones.</li>
                         </ul>
 
-                    <p>Hibernation Screen</p>
+                    <h4>Hibernation Screen</h4>
                         <ul>
-                            <li>Blend into any kitchen and provide information passively until welcome word activation.</li>
+                            <li class="design_bp_last">Blend into any kitchen and provide information passively until welcome word activation.</li>
                         </ul>
                         <img src="img/figma1.jpg" alt="wireframe of hibernation screen">
 
-                    <p>Greeting Screen</p>
+                    <h4>Greeting Screen</h4>
                         <ul>
-                            <li>On-screen example commands: no verbal disruption to conversation flow.</li>
+                            <li class="design_bp_last">On-screen example commands: no verbal disruption to conversation flow.</li>
                         </ul>
                         <img src="img/figma2.jpg" alt="wireframe of greeting screen">
 
-                    <p>Explore Screen</p>
+                    <h4>Explore Screen</h4>
                         <ul>
-                            <li>Recipe categorization: facilitate recipe searches based on varying user wants/needs.</li>
-                            <li>Tiles for each recipe with photos: engage and help users process information quicker.</li>
+                            <li class="design_bp">Recipe categorization: facilitate recipe searches based on varying user wants/needs.</li>
+                            <li class="design_bp_last">Tiles for each recipe with photos: engage and help users process information quicker.</li>
                         </ul>
                         <img src="img/figma3.jpg" alt="wireframe of explore recipes screen">
 
-                    <p>Saved Recipe Screen</p>
+                    <h4>Saved Recipe Screen</h4>
                         <ul>
-                            <li>Provide quick access to desired recipes that the user can curate.</li>
-                            <li>Potential enhancement: Pinterest integration.</li>
+                            <li class="design_bp">Provide quick access to desired recipes that the user can curate.</li>
+                            <li class="design_bp_last">Potential enhancement: Pinterest integration.</li>
                         </ul>
                         <img src="img/figma4.jpg" alt="wireframe of saved recipes screen">
 
-                    <p>Recipe Overview Screen</p>
+                    <h4>Recipe Overview Screen</h4>
                         <ul>
-                            <li>Efficiently display the most essential information. </li>
+                            <li class="design_bp_last">Efficiently display the most essential information. </li>
                         </ul>
                         <img src="img/figma5.jpg" alt="wireframe of recipe overview screen">
 
-                    <p>Recipe Step Screen</p>
+                    <h4>Recipe Step Screen</h4>
                         <ul>
-                            <li>Augment the verbal instructions with essential information needed for each step.</li>
-                            <li>Incorporated feedback: ability to override automatic appliance ignition.</li>
-                            <li>Potential enhancement: reminder to turn off appliance after recipe completion.</li>
+                            <li class="design_bp">Augment the verbal instructions with essential information needed for each step.</li>
+                            <li class="design_bp">Incorporated feedback: ability to override automatic appliance ignition.</li>
+                            <li class="design_bp_last">Potential enhancement: reminder to turn off appliance after recipe completion.</li>
                         </ul>
                         <img src="img/figma6.jpg" alt="wireframe of recipe step screen">
 
-                    <p>Your Kitchen Screens</p>
+                    <h4>Your Kitchen Screens</h4>
                         <ul>
-                            <li>Display all connected devices and tools: provide user affordance and direct actions.</li>
+                            <li class="design_bp_last">Display all connected devices and tools: provide user affordance and direct actions.</li>
                         </ul>
                         <img src="img/figma9.jpg" alt="wireframe of your kitchen screen">
                         <img src="img/figma10.jpg" alt="wireframe of your kitchen screen">
                 </article>
             </section>
+        </div>
 
             <footer>
                 <section id="contact">

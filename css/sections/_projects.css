@@ -1,0 +1,32 @@
+/* ---------------
+      projects
+----------------- */
+p {
+  padding-bottom: 8px;
+}
+
+img {
+  width: 100px;
+}
+
+#chef {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% auto;
+  grid-template-columns: 25% auto;
+      grid-template-areas: "ci clm";
+}
+
+.chef_icon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  padding: 8px 0 16px 16px;
+  grid-area: ci;
+}
+
+.chef_learn_more {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  padding: 8px 0 16px 0;
+  grid-area: clm;
+}
