@@ -2,7 +2,7 @@
     Base
 ============= */
 body{
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 p{
@@ -20,6 +20,8 @@ ul{
 }
 
 .content-grid{
+    margin-top: 145px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". content .";
@@ -32,20 +34,4 @@ ul{
         background-color: var(--white) ;
         grid-area: content;
         }
-}
-
-#contact{
-    .social-icons{
-        li{
-            // love // hate
-            a:link, a:visited{
-                color: var(--black);
-                text-decoration: none;
-            }
-
-            a:hover, a:active{
-                color: var(--DarkGray);
-            }
-        }
-    }
 }

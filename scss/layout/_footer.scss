@@ -3,7 +3,26 @@
 ============= */
 
 footer{
+    box-sizing:border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding-top: 8px;
     padding-left: 16px;
     background-color: var(--LightGray);
+    font-size: rem-calc(16);
+}
+
+.social-icons{
+    li{
+        // love // hate
+        a:link, a:visited{
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        a:hover, a:active{
+            color: var(--DarkGray);
+        }
+    }
 }

@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/2a699e9467.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/2a699e9467.js"crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +17,25 @@
   <body>
     <main class="content-grid">
       <div class="content-grid-item">
-        <header>
-          <h1>Marissa Villano</h1>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="education.html">Education</a></li>
-            </ul>
-          </nav>
-        </header>
+            <header>
+              <h1>Marissa Villano</h1>
+                  <section id="nav-container">
+                      <section id="burger-container">
+                        <button id="burger-btn">
+                            <i class="fa-solid fa-bars"></i>MENU
+                          </button>
+                      </section>
+
+                      <nav id="main-menu">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="projects.html">Projects</a></li>
+                          <li><a href="resume.html">Resume</a></li>
+                          <li><a href="education.html">Education</a></li>
+                        </ul>
+                      </nav>
+                </section>
+            </header>
 
         <section id="index">
           <img src="img/portrait.jpg" alt="profile image of professional" />
@@ -56,17 +61,19 @@
             design process infinitely iterative.
           </p>
         </section>
+      </div>
+
 
         <footer>
           <section id="contact">
             <h2>Contact Me</h2>
-            <ul class="social-icons">
-              <li><a href="mailto:mnv37@drexel.edu"><i class="fa-solid fa-envelope"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
+                <ul class="social-icons">
+                  <li><a href="mailto:mnv37@drexel.edu"><i class="fa-solid fa-envelope"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
           </section>
         </footer>
-      </div>
+
     </main>
 
     <script src="js/scripts-dist.js"></script>
