@@ -22,6 +22,12 @@ header{
     top: 0;
     left: 0;
 
+    @media screen and (max-width: 374px){
+        h1{
+            font-size: rem-calc(44px);
+        }
+    }
+
     @include sm{
         grid-template-areas: "nav";
         padding-bottom: 0;

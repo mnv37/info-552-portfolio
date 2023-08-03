@@ -10,23 +10,23 @@ img {
 }
 
 #chef {
+  margin-top: 8px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% auto;
-  grid-template-columns: 25% auto;
-      grid-template-areas: "ci clm";
+  -ms-grid-columns: 16px 100px auto 16px;
+  grid-template-columns: 16px 100px auto 16px;
+      grid-template-areas: ". ci clm .";
 }
 
 .chef_icon {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  padding: 8px 0 16px 16px;
+  -ms-grid-column: 2;
   grid-area: ci;
 }
 
 .chef_learn_more {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  padding: 8px 0 16px 0;
+  -ms-grid-column: 3;
+  margin-left: 24px;
   grid-area: clm;
 }

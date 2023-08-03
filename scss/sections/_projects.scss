@@ -7,22 +7,22 @@ p{
 }
 
 img{
-width: 100px;
+      width: 100px;
 }   
 
 #chef{
+      margin-top: 8px;
       display: grid;
-      grid-template-columns: 25% auto;
+      grid-template-columns: 16px 100px auto 16px;
       grid-template-areas:
-      "ci clm";
+      ". ci clm .";
 }
 
 .chef_icon{
-      padding: 8px 0 16px 16px;
       grid-area: ci;
 }
 
 .chef_learn_more{
-      padding: 8px 0 16px 0;
+      margin-left: 24px;
       grid-area: clm;
 }
