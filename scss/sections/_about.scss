@@ -1,0 +1,17 @@
+/* ---------------
+      about
+----------------- */
+
+#about-me-content{
+    margin: 0px 8px;
+    h2{
+        margin-bottom: 16px;
+        width: 100%;
+        background-color: var(--LightGray);};
+    ul{
+        margin-bottom:16px;};
+    li{
+        list-style: disc outside;
+       margin-left: 16px;};
+}
+

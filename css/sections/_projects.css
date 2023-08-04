@@ -1,10 +1,6 @@
 /* ---------------
       projects
 ----------------- */
-p {
-  padding-bottom: 8px;
-}
-
 img {
   width: 100px;
 }
@@ -29,4 +25,7 @@ img {
   -ms-grid-column: 3;
   margin-left: 24px;
   grid-area: clm;
+}
+.chef_learn_more p {
+  padding-bottom: 8px;
 }
