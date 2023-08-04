@@ -583,6 +583,27 @@ h1 {
 #index {
   padding: 0 16px;
 }
+#index h2 {
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: var(--LightGray);
+}
+
+@media (min-width: 768px) {
+  #about-me {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: auto 30%;
+    grid-template-columns: auto 30%;
+        grid-template-areas: "ib pp";
+  }
+}
 
 #profile_pic {
   background-image: url("../img/portrait.jpg");
@@ -592,6 +613,28 @@ h1 {
   border-radius: 100%;
   height: 200px;
   margin: 16px auto 16px;
+}
+@media (min-width: 768px) {
+  #profile_pic {
+    grid-area: pp;
+  }
+}
+
+@media (min-width: 768px) {
+  #intro-blurb {
+    grid-area: ib;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile_pic {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #intro-blurb {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
 }
 
 p {

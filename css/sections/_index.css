@@ -8,6 +8,11 @@ h1 {
 #index {
   padding: 0 16px;
 }
+#index h2 {
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: var(--LightGray);
+}
 
 #profile_pic {
   background-image: url("../img/portrait.jpg");
