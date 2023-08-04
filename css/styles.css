@@ -485,6 +485,13 @@ header {
   top: 0;
   left: 0;
 }
+header a:link, header a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+header a:hover, header a:active {
+  color: var(--white);
+}
 @media screen and (max-width: 374px) {
   header h1 {
     font-size: 2.75rem;
@@ -556,10 +563,18 @@ footer {
 }
 
 .social-icons {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: si;
 }
 .social-icons li {
   margin: 0 16px;
@@ -571,6 +586,59 @@ footer {
 }
 .social-icons li a:hover, .social-icons li a:active {
   color: var(--DarkGray);
+}
+
+#contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px auto 40px;
+  grid-template-columns: 150px auto 40px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+      grid-template-areas: "cmh2 . ." "si . vp";
+}
+
+.contact-me-h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: cmh2;
+  width: 150px;
+}
+
+.email-button {
+  grid-area: eb;
+}
+
+.linkedin-button {
+  grid-area: lb;
+}
+
+.validatorpic {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: vp;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.validatorpic img {
+  width: 30px;
+  height: 30px;
 }
 
 /* ---------------
@@ -629,10 +697,6 @@ footer {
 /* ---------------
       projects
 ----------------- */
-img {
-  width: 100px;
-}
-
 #chef {
   margin-top: 8px;
   display: -ms-grid;
@@ -640,6 +704,9 @@ img {
   -ms-grid-columns: 16px 100px auto 16px;
   grid-template-columns: 16px 100px auto 16px;
       grid-template-areas: ". ci clm .";
+}
+#chef img {
+  width: 100px;
 }
 
 .chef_icon {

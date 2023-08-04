@@ -11,12 +11,16 @@ footer{
     padding-left: 16px;
     padding-bottom: 8px;
     background-color: var(--LightGray);
-    font-size: rem-calc(16);
-}
+    font-size: rem-calc(16);}
+
 
 .social-icons{
-    display: flex;
-    padding-left: 24px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: si;
+
+    
 
     li{
         margin: 0 16px;
@@ -24,11 +28,46 @@ footer{
         a:link, a:visited{
             color: var(--black);
             text-decoration: none;
-            font-size: rem-calc(18);
-        }
+            font-size: rem-calc(18);}
 
         a:hover, a:active{
-            color: var(--DarkGray);
-        }
+            color: var(--DarkGray);}
     }
 }
+
+#contact{
+    display:grid;
+    grid-template-columns: 150px auto 40px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "cmh2 . ."
+    "si . vp";}
+
+.contact-me-h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    grid-area: cmh2;
+    width: 150px;
+}
+
+.email-button{
+    grid-area: eb;
+}
+
+.linkedin-button{
+    grid-area: lb;
+}
+
+.validatorpic{  
+    img{
+    width: 30px;
+    height: 30px;}
+    grid-area: vp;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+

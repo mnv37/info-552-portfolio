@@ -1,10 +1,6 @@
 /* ---------------
       projects
 ----------------- */
-img {
-  width: 100px;
-}
-
 #chef {
   margin-top: 8px;
   display: -ms-grid;
@@ -12,6 +8,9 @@ img {
   -ms-grid-columns: 16px 100px auto 16px;
   grid-template-columns: 16px 100px auto 16px;
       grid-template-areas: ". ci clm .";
+}
+#chef img {
+  width: 100px;
 }
 
 .chef_icon {
