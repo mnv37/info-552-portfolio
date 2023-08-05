@@ -1,47 +1,34 @@
 /* ---------------
       resume
 ----------------- */
+
 .resume_content{
             margin: 0px 8px;
+      h1{
+            text-align:center;
+            margin-bottom: 16px;}
       h2{
             margin-bottom: 16px;
             width: 100%;
             background-color: var(--LightGray);}
-      h3{
-            margin-bottom: 8px;}
-      ul{
+      p{
             margin-bottom: 16px;}
-            
       }
 
 .role_name{
       font-weight: 600;
       list-style: none;
-      margin-bottom: 8px;}
+      margin: 8px 0 8px;}
 
             
 .role_description{
       list-style: disc outside;
-      margin-left: 16px;}
-
-.education_content{
-      margin: 0px 8px;
-      h2{
-            margin-bottom: 16px;
-            width: 100%;
-            background-color: var(--LightGray);}
-      h3{
-            margin-bottom: 8px;}
-      ul{
-            margin-bottom: 16px;}
-}
-
-.top_info{
-      margin-bottom: 8px;}
-
-.sub_info{
-      list-style: disc outside;
       margin-left: 32px;}
+
+.role_description_last{
+      list-style: disc outside;
+      margin: 0 0 24px 32px;
+}
 
 #CoreComp_TechSkills{
   @include md{
@@ -61,4 +48,7 @@
             grid-area: ts;}
 }
 
+.download-link{
+      margin-bottom: 16px;
+}
 

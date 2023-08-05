@@ -1,25 +1,48 @@
 /* ---------------
       projects
 ----------------- */
-
-
-
-#chef{
-      img{
-      width: 100px;};   
-      margin-top: 8px;
-      display: grid;
-      grid-template-columns: 16px 100px auto 16px;
-      grid-template-areas:
-      ". ci clm .";
+#projects-page{
+      h1{
+            text-align: center;
+            margin-bottom: 16px;}
+      h2{
+            margin-bottom: 16px;
+            width: 100%;
+            background-color: var(--LightGray);
+      }
 }
 
-.chef_icon{
-      grid-area: ci;
+.role_description{
+      list-style: disc outside;
+      margin-left: 32px;}
+
+.role_description_last{
+      list-style: disc outside;
+      margin: 0 0 24px 32px;
 }
 
-.chef_learn_more{
-      p{padding-bottom:8px;}
-      margin-left: 24px;
-      grid-area: clm;
+.project-page-link{
+      list-style: circle;
+      margin-left: 80px;
+}
+
+.project-page-link2{
+      list-style: none;
+      margin-left: 80px;
+}
+
+.project-page-link3{
+      list-style: none;
+      margin-left: 80px;
+}
+
+.button-link{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--LightGray);
+      padding: 15px 25px;
+      margin-bottom: 16px;
+      width: 175px;
+      text-decoration: none;
+      text-align: center;
 }

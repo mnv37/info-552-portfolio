@@ -697,32 +697,55 @@ footer {
 /* ---------------
       projects
 ----------------- */
-#chef {
-  margin-top: 8px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 16px 100px auto 16px;
-  grid-template-columns: 16px 100px auto 16px;
-      grid-template-areas: ". ci clm .";
+#projects-page h1 {
+  text-align: center;
+  margin-bottom: 16px;
 }
-#chef img {
-  width: 100px;
+#projects-page h2 {
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: var(--LightGray);
 }
 
-.chef_icon {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: ci;
+.role_description {
+  list-style: disc outside;
+  margin-left: 32px;
 }
 
-.chef_learn_more {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  margin-left: 24px;
-  grid-area: clm;
+.role_description_last {
+  list-style: disc outside;
+  margin: 0 0 24px 32px;
 }
-.chef_learn_more p {
-  padding-bottom: 8px;
+
+.project-page-link {
+  list-style: circle;
+  margin-left: 80px;
+}
+
+.project-page-link2 {
+  list-style: none;
+  margin-left: 80px;
+}
+
+.project-page-link3 {
+  list-style: none;
+  margin-left: 80px;
+}
+
+.button-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--LightGray);
+  padding: 15px 25px;
+  margin-bottom: 16px;
+  width: 175px;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* ---------------
@@ -809,83 +832,38 @@ footer {
 }
 
 /* ---------------
-      education
------------------ */
-.education_content {
-  margin: 0px 8px;
-}
-.education_content h2 {
-  margin-bottom: 16px;
-  width: 100%;
-  background-color: var(--LightGray);
-}
-.education_content h3 {
-  margin-bottom: 8px;
-}
-.education_content ul {
-  margin-bottom: 16px;
-}
-
-.top_info {
-  margin-bottom: 8px;
-}
-
-.sub_info {
-  list-style: disc outside;
-  margin-left: 32px;
-}
-
-/* ---------------
       resume
 ----------------- */
 .resume_content {
   margin: 0px 8px;
+}
+.resume_content h1 {
+  text-align: center;
+  margin-bottom: 16px;
 }
 .resume_content h2 {
   margin-bottom: 16px;
   width: 100%;
   background-color: var(--LightGray);
 }
-.resume_content h3 {
-  margin-bottom: 8px;
-}
-.resume_content ul {
+.resume_content p {
   margin-bottom: 16px;
 }
 
 .role_name {
   font-weight: 600;
   list-style: none;
-  margin-bottom: 8px;
+  margin: 8px 0 8px;
 }
 
 .role_description {
   list-style: disc outside;
-  margin-left: 16px;
-}
-
-.education_content {
-  margin: 0px 8px;
-}
-.education_content h2 {
-  margin-bottom: 16px;
-  width: 100%;
-  background-color: var(--LightGray);
-}
-.education_content h3 {
-  margin-bottom: 8px;
-}
-.education_content ul {
-  margin-bottom: 16px;
-}
-
-.top_info {
-  margin-bottom: 8px;
-}
-
-.sub_info {
-  list-style: disc outside;
   margin-left: 32px;
+}
+
+.role_description_last {
+  list-style: disc outside;
+  margin: 0 0 24px 32px;
 }
 
 @media (min-width: 768px) {
@@ -921,11 +899,19 @@ footer {
   }
 }
 
+.download-link {
+  margin-bottom: 16px;
+}
+
 /* ---------------
       about
 ----------------- */
 #about-me-content {
   margin: 0px 8px;
+}
+#about-me-content h1 {
+  text-align: center;
+  margin-bottom: 16px;
 }
 #about-me-content h2 {
   margin-bottom: 16px;
@@ -937,12 +923,127 @@ footer {
 }
 #about-me-content li {
   list-style: disc outside;
-  margin-left: 16px;
+  margin-left: 32px;
 }
 
 /* ---------------
       associations
 ----------------- */
+#associations-content {
+  margin: 0px 8px;
+}
+#associations-content h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#associations-content h2 {
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: var(--LightGray);
+}
+#associations-content p {
+  margin-bottom: 8px;
+}
+#associations-content ul {
+  margin-bottom: 16px;
+}
+
+.ac_description {
+  list-style: disc outside;
+  margin-left: 32px;
+}
+
+.button-link {
+  background-color: var(--LightGray);
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.button-spacing {
+  margin: 32px 0 32px 16px;
+}
+
 /* ---------------
       contact
 ----------------- */
+#contact-page h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#contact-page h2 {
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: var(--LightGray);
+}
+#contact-page p {
+  font-size: 1.5rem;
+}
+#contact-page ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+  width: 200px;
+}
+#contact-page li a:link, #contact-page li a:visited {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 2.25rem;
+}
+#contact-page li a:hover, #contact-page li a:active {
+  color: var(--DarkGray);
+}
+
+/* ---------------
+      crochet
+----------------- */
+#crochet_proj_page h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#crochet_proj_page h2 {
+  margin: 24px 0px 10px;
+  width: 100%;
+  background-color: var(--LightGray);
+}
+#crochet_proj_page img {
+  height: 450px;
+}
+
+/* ---------------
+      glass
+----------------- */
+#glass-proj-pg h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#glass-proj-pg h2 {
+  margin: 24px 0px 10px;
+  width: 100%;
+  background-color: var(--LightGray);
+}
+#glass-proj-pg img {
+  height: 450px;
+}
+
+/* ---------------
+      nails
+----------------- */
+#nail-proj-pg h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#nail-proj-pg h2 {
+  margin: 24px 0px 10px;
+  width: 100%;
+  background-color: var(--LightGray);
+}
+#nail-proj-pg img {
+  height: 450px;
+}
