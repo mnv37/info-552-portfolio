@@ -62,6 +62,19 @@
 
 #Increasing_Fidelity video {
   width: 100%;
+  margin: 8px 0;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: contain;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  margin: 16px 8px;
 }
 
 #Design_Justification img {

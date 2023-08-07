@@ -65,7 +65,16 @@
 #Increasing_Fidelity{
       video{
             width: 100%;
+            margin: 8px 0;
       }
+}
+
+.carousel{
+      display:flex;
+      overflow: scroll;
+      overscroll-behavior: contain;
+      scroll-snap-type: x mandatory;
+      margin: 16px 8px;
 }
 
 #Design_Justification{
