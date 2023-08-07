@@ -28,7 +28,16 @@
 #Getting_Started img {
   display: block;
   width: 80%;
+  height: auto;
   margin: 0 auto 8px;
+}
+
+#sb1 {
+  grid-area: s1;
+}
+
+#sb2 {
+  grid-area: s2;
 }
 
 .feedback_categories {
@@ -77,10 +86,10 @@
   margin: 16px 8px;
 }
 
-#Design_Justification img {
-  display: block;
-  width: 30%;
-  margin: 0 auto 24px 0;
+img.dj {
+  width: 80%;
+  height: auto;
+  margin: 0 auto 16px;
 }
 
 .design_bp {

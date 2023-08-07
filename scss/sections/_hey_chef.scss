@@ -5,7 +5,7 @@
 .hey_chef_content{
       margin: 0px 8px;
       h3{
-            margin: -8px 0px 16px;}
+            margin: 0px 0px 16px;}
       h2{
             margin-bottom: 8px;
             width: 100%;
@@ -25,10 +25,33 @@
 
 #Getting_Started{
       img{
-            display:block;
+            display: block;
             width: 80%;
+            height: auto;
             margin: 0 auto 8px;
       }
+}
+#gettingstartedgrid{
+      img{
+            display:block;
+            width: 80%;
+            height: auto;
+            margin: 0 auto 8px;
+      }
+
+      @include sm{
+            display:grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+            "s1 s2"}
+}
+
+#sb1{
+      grid-area: s1;
+}
+
+#sb2{
+      grid-area: s2;
 }
 
 .feedback_categories{
@@ -77,13 +100,12 @@
       margin: 16px 8px;
 }
 
-#Design_Justification{
-      img{
-            display: block;
-            width: 30%;
-            margin: 0 auto 24px 0;
-      }
+img.dj{
+      width: 80%;
+      height:auto;
+      margin: 0 auto 16px;
 }
+
 .design_bp{
       list-style: disc outside;
       margin-left: 24px;
